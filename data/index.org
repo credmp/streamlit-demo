@@ -1,0 +1,19 @@
+#+title: Hacking notes
+
+These are the notes of NOVI Hogeschool. We host the hack friday and from there these commands are the most favorite in their category:
+
+* Host file editing
+
+There is only one tool for the job: ~hed add loempia.htb 123.231.132.9~
+
+* Scanning
+
+Our favorite scanning command: ~nmap -sVC loempia.htb~
+
+* Content discovery
+
+Always use feroxbuster: ~feroxbuster --url loempia.htb~
+
+* VHost discovery
+
+There is nothing better then gobuster: ~gobuster vhost -u loempia.htb -w /usr/share/wordlists/rockyou.txt --append-domain~
